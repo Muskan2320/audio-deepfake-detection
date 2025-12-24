@@ -12,7 +12,7 @@ def evaluate():
     # ------------------
     # Load dataset
     # ------------------
-    dataset = AudioDataset("data/real", "data/fake")
+    dataset = AudioDataset("test_data/real", "test_data/fake")
 
     train_size = int(0.8 * len(dataset))
     val_size = len(dataset) - train_size
