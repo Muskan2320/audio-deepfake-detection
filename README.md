@@ -41,14 +41,20 @@ Audio → MFCC Extraction → CNN → Softmax → Real/Fake Prediction
 
 ---
 
-## Evaluation Metrics
+## Evaluation Results
 
-Final evaluation was performed on the validation split.
+The model was evaluated on a small held-out test set containing
+10 real and 10 fake audio samples.
 
-- Accuracy: **(fill from output)**
-- Precision: **(fill from output)**
-- Recall: **(fill from output)**
-- F1 Score: **(fill from output)**
+- Accuracy: 0.75
+- Precision: 1.00
+- Recall: 0.67
+- F1 Score: 0.80
+
+High precision indicates that all audio samples classified as fake
+were indeed fake, while lower recall suggests that some fake samples
+were misclassified as real. This behavior is expected for a lightweight
+model evaluated on a small dataset.
 
 ### Note on EER
 Equal Error Rate (EER) is a commonly used metric in audio spoof detection.
