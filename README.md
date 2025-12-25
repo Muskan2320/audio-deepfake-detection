@@ -1,4 +1,4 @@
-# Audio Deepfake Detection (Task 2)
+# Audio Deepfake Detection
 
 This project detects whether a given speech audio sample is **REAL** or **AI-GENERATED**
 using classical audio features and a lightweight deep learning model.
